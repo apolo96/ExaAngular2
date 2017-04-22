@@ -1,0 +1,30 @@
+<div class="container">
+    <table class="table table-hover">
+        <thead class="thead-default">
+            <tr>
+                <th>ID</th>
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Tipo</th>
+                <th>-</th>
+                <!--<th>Nivel Usuario</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuario">
+                <td>{{usuario?.Id}}</td>
+                <td>{{usuario?.Documento}}</td>
+                <td>{{usuario?.Nombre}}</td>
+                <td>{{usuario?.Apellido}}</td>
+                <td>{{usuario?.TipoUsuario}}</td>
+                <!--<td>{{usuario?.NivelUsuario}}</td>
+                        <td>{{usuario?.Telefono}}</td>
+                        <td>{{usuario?.Correo}}</td>-->
+                <td> <button class="btn btn-primary" (click)="verDetalle(usuario.Id)">Seleccionar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

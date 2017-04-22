@@ -1,0 +1,18 @@
+<div class="card text-center">
+  <div class="card-header">
+    Detalle
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">{{usuario?.Nombre}}</h4>
+    <p class="card-text">ID: {{usuario?.Id}} </p>
+    <p class="card-text">Documento: {{usuario?.Documento}} </p>
+    <p class="card-text">Apellido: {{usuario?.Apellido}} </p>
+    <p class="card-text">Tipo Usuario: {{usuario?.TipoUsuario}} </p>
+    <p class="card-text">Nivel Usuario: {{usuario?.NivelUsuario}} </p>
+    <p class="card-text">Telefono: {{usuario?.Telefono}} </p>
+    <p class="card-text">Correo: {{usuario?.Correo}} </p>
+    <button class="btn btn-primary" (click)="irActualizar(usuario.Id)">Actualizar</button>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>
